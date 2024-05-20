@@ -1,11 +1,64 @@
 .App {
   text-align: center;
-  display: flex;
-  justify-content: center;
+  padding: 20px;
 }
 
 .container {
-  width: 600px;
-  height: 600px;
-  border: 2px solid black;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #606264;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #a7b1b8;
 }
